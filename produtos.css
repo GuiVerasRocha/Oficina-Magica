@@ -1,0 +1,151 @@
+/* Fonte divertida */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* ======== BANNER LÚDICO COM NUVENS ======== */
+.banner-futurista {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(180deg, #AEE4FF, #FFFFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* NUVENS animadas */
+.kontra-shape {
+    position: absolute;
+    background: white;
+    opacity: 0.8;
+    border-radius: 50%;
+    filter: blur(6px);
+    animation: cloudFloat 10s infinite linear;
+}
+
+.shape1 { width: 160px; height: 80px; top: 15%; left: -10%; animation-duration: 18s;}
+.shape2 { width: 200px; height: 100px; bottom: 10%; left: 20%; animation-duration: 22s;}
+.shape3 { width: 130px; height: 70px; bottom: 30%; right: -10%; animation-duration: 16s;}
+
+@keyframes cloudFloat {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(120%); }
+}
+
+.banner-content {
+    text-align: center;
+    z-index: 10;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    color: #4C66FF;
+}
+
+.banner-content p {
+    margin-top: 10px;
+    color: #5D5D5D;
+}
+
+.banner-btn {
+    margin-top: 20px;
+    padding: 14px 28px;
+    position: relative;
+    top: 40px;
+    background: #FFCC5C;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    box-shadow: 0 5px 0 #E0A63B;
+    transition: 0.2s;
+}
+
+.banner-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #E0A63B;
+}
+
+/* ======== LISTA DE PRODUTOS ======== */
+.lista-produtos h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2.8rem;
+    color: #4C66FF;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* ======== CARDS ESTILO INFANTIL REDONDO ======== */
+.produto-item {
+    width: 300px;
+    background: #FFFAF4;
+    padding: 25px;
+    border-radius: 35px;
+    border: 4px solid #FFE2B8;
+    box-shadow: 0px 10px 0px #FFD49A;
+    text-align: center;
+    transition: 0.25s ease-in-out;
+}
+
+.produto-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 14px 0px #FFC878;
+    background: #FFF3E0;
+}
+
+.produto-item img {
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+/* ======== TÍTULO DO CARD ======== */
+.produto-item h3 {
+    color: #FF9A3C;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+/* ======== DESCRIÇÃO ======== */
+.produto-item p {
+    color: #6F6F6F;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* ======== BOTÃO ESTILIZADO (FORMATO DE PASTILHA) ======== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4C66FF;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 0 #3546B8;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #3546B8;
+}
+
