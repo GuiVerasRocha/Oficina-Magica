@@ -258,7 +258,7 @@ header img {
   transition: .3s;
 }
 
-.btn-sobre:hover {
+.btn-sobre:hover { 
   background: #0022FF;
 }
 
